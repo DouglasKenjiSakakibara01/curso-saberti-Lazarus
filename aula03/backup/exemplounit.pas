@@ -18,14 +18,18 @@ type
 
 var
   calculaF: TcalculaF;
+  Result: Double;
 
 const
   pi=3.14;
 implementation
 
 {$R *.lfm}
-function calculaAreaCirculo
-var
+function calculaAreaCirculo (Raio:Double):Double;
+begin
+  Result:= pi * (Raio * Raio);
+
+end;
 
 
 
