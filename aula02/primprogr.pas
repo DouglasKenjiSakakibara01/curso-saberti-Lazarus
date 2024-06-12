@@ -45,7 +45,6 @@ type
   private
 
   public
-    aux: Boolean;
 
   end;
 
