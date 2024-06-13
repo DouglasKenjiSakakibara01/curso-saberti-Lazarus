@@ -18,18 +18,18 @@
         <Filename Value="exemplounit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="calculaF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="exemploUnit"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="6"/>
-        <CursorPos X="28" Y="37"/>
-        <ComponentState Value="1"/>
+        <TopLine Value="16"/>
+        <CursorPos X="5" Y="32"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="9">
+    <JumpHistory HistoryIndex="14">
       <Position>
         <Filename Value="exemplounit.pas"/>
         <Caret Line="15" Column="35"/>
@@ -69,6 +69,26 @@
       <Position>
         <Filename Value="exemplounit.pas"/>
         <Caret Line="35" Column="65" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="exemplounit.pas"/>
+        <Caret Line="15" Column="59" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="exemplounit.pas"/>
+        <Caret Line="58" Column="70" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="exemplounit.pas"/>
+        <Caret Line="64" Column="69" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="exemplounit.pas"/>
+        <Caret Line="63" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="exemplounit.pas"/>
+        <Caret Line="47" TopLine="23"/>
       </Position>
     </JumpHistory>
     <RunParams>

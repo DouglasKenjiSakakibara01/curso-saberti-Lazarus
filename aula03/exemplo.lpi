@@ -38,6 +38,7 @@
         <Filename Value="exemplounit.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="calculaF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="exemploUnit"/>
       </Unit>

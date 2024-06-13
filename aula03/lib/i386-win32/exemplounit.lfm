@@ -1,28 +1,27 @@
 object calculaF: TcalculaF
-  Left = 851
+  Left = 914
   Height = 240
-  Top = 357
+  Top = 296
   Width = 320
   Caption = 'Cálcula Área'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 240
+  ClientWidth = 320
   LCLVersion = '3.4.0.0'
-  object edit1: TEdit
+  object input: TEdit
     Left = 80
     Height = 23
     Top = 56
     Width = 80
     TabOrder = 0
-    Text = 'edit1'
-    OnChange = edit1Change
+    OnChange = inputChange
   end
-  object edit: TEdit
+  object result: TEdit
     Left = 80
     Height = 23
     Top = 128
     Width = 80
     TabOrder = 1
-    Text = 'edit'
+    OnChange = resultChange
   end
   object btnCalculo: TButton
     Left = 200
@@ -31,6 +30,7 @@ object calculaF: TcalculaF
     Width = 75
     Caption = 'Calcular'
     TabOrder = 2
+    OnClick = btnCalculoClick
   end
   object label1: TLabel
     Left = 24

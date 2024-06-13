@@ -13,11 +13,13 @@ type
 
   TcalculaF = class(TForm)
     btnCalculo: TButton;
-    edit1: TEdit;
-    edit: TEdit;
+    input: TEdit;
+    result: TEdit;
     label1: TLabel;
     label2: TLabel;
-    procedure edit1Change(Sender: TObject);
+    procedure btnCalculoClick(Sender: TObject);
+    procedure inputChange(Sender: TObject);
+    procedure resultChange(Sender: TObject);
   private
 
   public
@@ -27,14 +29,14 @@ type
 
 var
   calculaF: TcalculaF;
-  Result: Double;
+  //Result: Double;
 
 const
   pi=3.14;
 implementation
 
 {$R *.lfm}
-function calculaAreaCirculo(Raio:Double):Double;
+function TcalculaF.calculaAreaCirculo(Raio:Double):Double;
 begin
   Result:= pi * (Raio * Raio);
 
@@ -42,15 +44,23 @@ end;
 
 { TcalculaF }
 
-procedure TcalculaF.edit1Change(Sender: TObject);
+procedure TcalculaF.inputChange(Sender: TObject);
+begin
+
+
+end;
+
+procedure TcalculaF.btnCalculoClick(Sender: TObject);
+begin
+  result.Text:= FloatToStr(calculaAreaCirculo(StrToFloat(input.Text)));
+
+end;
+
+procedure TcalculaF.resultChange(Sender: TObject);
 begin
 
 end;
 
-function TcalculaF.calculaAreaCirculo(Raio: Double): Double;
-begin
-
-end;
 
 
 
