@@ -19,7 +19,6 @@ type
     label2: TLabel;
     procedure btnCalculoClick(Sender: TObject);
     procedure inputChange(Sender: TObject);
-    procedure resultChange(Sender: TObject);
   private
 
   public
@@ -29,7 +28,6 @@ type
 
 var
   calculaF: TcalculaF;
-  //Result: Double;
 
 const
   pi=3.14;
@@ -56,10 +54,7 @@ begin
 
 end;
 
-procedure TcalculaF.resultChange(Sender: TObject);
-begin
 
-end;
 
 
 

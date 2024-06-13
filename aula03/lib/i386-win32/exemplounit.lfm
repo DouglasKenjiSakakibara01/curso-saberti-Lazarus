@@ -20,8 +20,8 @@ object calculaF: TcalculaF
     Height = 23
     Top = 128
     Width = 80
+    ReadOnly = True
     TabOrder = 1
-    OnChange = resultChange
   end
   object btnCalculo: TButton
     Left = 200

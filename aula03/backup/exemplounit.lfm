@@ -13,7 +13,6 @@ object calculaF: TcalculaF
     Top = 56
     Width = 80
     TabOrder = 0
-    Text = 'input'
     OnChange = inputChange
   end
   object result: TEdit
@@ -22,7 +21,6 @@ object calculaF: TcalculaF
     Top = 128
     Width = 80
     TabOrder = 1
-    OnChange = resultChange
   end
   object btnCalculo: TButton
     Left = 200
