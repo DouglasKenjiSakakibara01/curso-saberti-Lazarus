@@ -22,66 +22,16 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="calculaCustoUnit"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="35"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
         <CursorPos X="2" Y="64"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="12">
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="52" Column="35" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="37" Column="17" TopLine="13"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="48" Column="59" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="49" Column="24" TopLine="24"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="50" Column="24" TopLine="25"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="51" Column="24" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="52" Column="24" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="53" Column="24" TopLine="28"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="54" Column="24" TopLine="29"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="55" Column="24" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="56" Column="24" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="55" Column="24" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="calculacustounit.pas"/>
-        <Caret Line="61" Column="24" TopLine="31"/>
-      </Position>
-    </JumpHistory>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

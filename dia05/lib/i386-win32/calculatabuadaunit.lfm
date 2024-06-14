@@ -1,0 +1,40 @@
+object Form1: TForm1
+  Left = 954
+  Height = 506
+  Top = 253
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 506
+  ClientWidth = 320
+  LCLVersion = '3.4.0.0'
+  object input: TEdit
+    Left = 160
+    Height = 23
+    Top = 40
+    Width = 80
+    TabOrder = 0
+  end
+  object btnGerar: TButton
+    Left = 200
+    Height = 25
+    Top = 216
+    Width = 88
+    Caption = 'Gerar Tabuada'
+    TabOrder = 1
+    OnClick = btnGerarClick
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 178
+    Top = 152
+    Width = 150
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 43
+    Width = 144
+    Caption = 'Digite a tabuada desejada : '
+  end
+end
