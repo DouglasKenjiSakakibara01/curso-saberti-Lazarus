@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="aula04.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="aula04unit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="aula04Unit"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="22"/>
+        <CursorPos X="159" Y="43"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="10">
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="46" Column="104" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="25" Column="36" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="49" Column="39" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="46" Column="30" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="47" Column="30" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="48" Column="30" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="49" Column="30" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="50" Column="30" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="49" Column="30" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="50" Column="30" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="aula04unit.pas"/>
+        <Caret Line="57" Column="30" TopLine="22"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
