@@ -1,0 +1,27 @@
+object Form1: TForm1
+  Left = 893
+  Height = 240
+  Top = 254
+  Width = 451
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 451
+  LCLVersion = '3.4.0.0'
+  object Memo1: TMemo
+    Left = 32
+    Height = 160
+    Top = 48
+    Width = 190
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object btnBusca: TButton
+    Left = 240
+    Height = 25
+    Top = 88
+    Width = 75
+    Caption = 'Busca Ímpar'
+    TabOrder = 1
+    OnClick = btnBuscaClick
+  end
+end

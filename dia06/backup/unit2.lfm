@@ -1,0 +1,23 @@
+object Form1: TForm1
+  Left = 775
+  Height = 220
+  Top = 294
+  Width = 320
+  Caption = 'Form1'
+  Menu = MainMenu1
+  LCLVersion = '3.4.0.0'
+  object MainMenu1: TMainMenu
+    Left = 80
+    Top = 48
+    object MenuItem1: TMenuItem
+      Caption = 'Opções'
+      OnClick = MenuItem1Click
+      object MenuItem3: TMenuItem
+        Caption = 'Cadastro'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Fechar'
+    end
+  end
+end
