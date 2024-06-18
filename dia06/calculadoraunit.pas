@@ -69,7 +69,10 @@ begin
 end;
 
 procedure TForm1.ButtonEqualClick(Sender: TObject);
+var
+  i:Integer;
 begin
+  for
 
 end;
 

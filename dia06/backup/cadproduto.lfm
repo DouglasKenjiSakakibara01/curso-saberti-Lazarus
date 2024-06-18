@@ -1,0 +1,81 @@
+inherited CadProdutoF: TCadProdutoF
+  Left = 441
+  Height = 564
+  Top = 263
+  Width = 583
+  ClientHeight = 564
+  ClientWidth = 583
+  inherited ButtonExcluir: TButton
+    Left = 288
+  end
+  object IdCliente: TEdit[5]
+    Left = 120
+    Height = 23
+    Top = 96
+    Width = 56
+    TabOrder = 5
+  end
+  object DescricaoSimples: TEdit[6]
+    Left = 160
+    Height = 23
+    Top = 128
+    Width = 320
+    TabOrder = 6
+  end
+  object Edit4: TEdit[7]
+    Left = 144
+    Height = 23
+    Top = 280
+    Width = 104
+    TabOrder = 7
+  end
+  object ComboBox1: TComboBox[8]
+    Left = 216
+    Height = 23
+    Top = 96
+    Width = 120
+    ItemHeight = 15
+    Items.Strings = (
+      'Limpeza'
+      'Comida'
+      'Brinquedos'
+    )
+    TabOrder = 8
+    Text = 'Tipo'
+  end
+  object LabelIDCliente: TLabel[9]
+    Left = 48
+    Height = 15
+    Top = 103
+    Width = 60
+    Caption = 'ID Cliente : '
+  end
+  object LabelDescS: TLabel[10]
+    Left = 48
+    Height = 15
+    Top = 131
+    Width = 104
+    Caption = 'Descrição Simples : '
+  end
+  object LabelDescC: TLabel[11]
+    Left = 48
+    Height = 15
+    Top = 168
+    Width = 115
+    Caption = 'Descrição Completa : '
+  end
+  object LabelVenda: TLabel[12]
+    Left = 48
+    Height = 15
+    Top = 280
+    Width = 86
+    Caption = 'Valor da Venda : '
+  end
+  object Memo1: TMemo[13]
+    Left = 168
+    Height = 90
+    Top = 168
+    Width = 312
+    TabOrder = 9
+  end
+end

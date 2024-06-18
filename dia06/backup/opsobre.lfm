@@ -1,0 +1,8 @@
+object OpSobreF: TOpSobreF
+  Left = 614
+  Height = 240
+  Top = 217
+  Width = 320
+  Caption = 'Sobre'
+  LCLVersion = '3.4.0.0'
+end

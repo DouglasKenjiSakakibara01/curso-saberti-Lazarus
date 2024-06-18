@@ -1,0 +1,64 @@
+object OpLoginF: TOpLoginF
+  Left = 701
+  Height = 240
+  Top = 251
+  Width = 320
+  Caption = 'Login'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '3.4.0.0'
+  object LabelEmail: TLabel
+    Left = 24
+    Height = 15
+    Top = 64
+    Width = 38
+    Caption = 'Email : '
+  end
+  object InputEmail: TEdit
+    Left = 80
+    Height = 23
+    Top = 56
+    Width = 80
+    TabOrder = 0
+  end
+  object LabelSenha: TLabel
+    Left = 24
+    Height = 15
+    Top = 120
+    Width = 41
+    Caption = 'Senha : '
+  end
+  object InputSenha: TEdit
+    Left = 80
+    Height = 23
+    Top = 112
+    Width = 80
+    TabOrder = 1
+  end
+  object ButtonEntrar: TButton
+    Left = 24
+    Height = 25
+    Top = 192
+    Width = 75
+    Caption = 'Entrar'
+    TabOrder = 2
+    OnClick = ButtonEntrarClick
+  end
+  object ButtonSair: TButton
+    Left = 125
+    Height = 25
+    Top = 192
+    Width = 75
+    Caption = 'Sair'
+    TabOrder = 3
+  end
+  object ButtonForgetSenha: TButton
+    Left = 160
+    Height = 24
+    Top = 144
+    Width = 120
+    Caption = 'Esqueci Minha Senha'
+    TabOrder = 4
+    OnClick = ButtonForgetSenhaClick
+  end
+end

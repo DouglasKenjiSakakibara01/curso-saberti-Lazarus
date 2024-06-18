@@ -87,6 +87,7 @@ end;
 
 procedure TForm1.ButtonPlusClick(Sender: TObject);
 begin
+  output.Text:=output.Text+'+';
 
 end;
 

@@ -1,0 +1,70 @@
+object CadEsqSenhaF: TCadEsqSenhaF
+  Left = 722
+  Height = 240
+  Top = 285
+  Width = 320
+  Caption = 'Recupera a senha '
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '3.4.0.0'
+  object InputEmail: TEdit
+    Left = 112
+    Height = 23
+    Top = 48
+    Width = 80
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 48
+    Width = 38
+    Caption = 'Email : '
+  end
+  object InputNovaSenha: TEdit
+    Left = 112
+    Height = 23
+    Top = 88
+    Width = 80
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 15
+    Top = 88
+    Width = 72
+    Caption = 'Nova Senha : '
+  end
+  object InputRepeteSenha: TEdit
+    Left = 112
+    Height = 23
+    Top = 128
+    Width = 80
+    TabOrder = 2
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 15
+    Top = 128
+    Width = 85
+    Caption = 'Repita a senha : '
+  end
+  object Button1: TButton
+    Left = 40
+    Height = 25
+    Top = 190
+    Width = 75
+    Caption = 'Entrar'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 176
+    Height = 25
+    Top = 190
+    Width = 75
+    Caption = 'Cancelar'
+    TabOrder = 4
+    OnClick = Button2Click
+  end
+end

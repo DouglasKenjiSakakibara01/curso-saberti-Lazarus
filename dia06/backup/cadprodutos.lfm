@@ -1,0 +1,8 @@
+object CadProdutosF: TCadProdutosF
+  Left = 526
+  Height = 240
+  Top = 204
+  Width = 320
+  Caption = 'Cadastro Produto'
+  LCLVersion = '3.4.0.0'
+end
