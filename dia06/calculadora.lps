@@ -11,7 +11,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="35"/>
       </Unit>
       <Unit>
         <Filename Value="calculadoraunit.pas"/>
@@ -21,11 +21,11 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="calculadoraUnit"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="75"/>
-        <CursorPos X="6" Y="93"/>
-        <UsageCount Value="30"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="105"/>
+        <CursorPos X="17" Y="119"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="/usr/share/lazarus/2.2.2/lcl/include/messagedialogs.inc"/>
@@ -49,127 +49,81 @@
         <CursorPos Y="2959"/>
         <UsageCount Value="10"/>
       </Unit>
+      <Unit>
+        <Filename Value="calculadoraunit.lfm"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="16">
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="137" TopLine="116"/>
+        <Caret Line="96" TopLine="77"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="90" TopLine="71"/>
+        <Caret Line="114" TopLine="84"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="92" TopLine="71"/>
+        <Caret Line="94" TopLine="84"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="94" TopLine="71"/>
+        <Caret Line="96" TopLine="84"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="95" TopLine="71"/>
+        <Caret Line="98" TopLine="84"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="102" TopLine="71"/>
+        <Caret Line="99" TopLine="84"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="115" TopLine="97"/>
+        <Caret Line="100" Column="7" TopLine="84"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="129" TopLine="99"/>
+        <Caret Line="294" Column="3" TopLine="267"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="90" TopLine="71"/>
+        <Caret Line="111" Column="17" TopLine="77"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="92" TopLine="71"/>
+        <Caret Line="97" Column="34" TopLine="78"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="94" TopLine="71"/>
+        <Caret Line="90" Column="10" TopLine="81"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="95" TopLine="71"/>
+        <Caret Line="95" TopLine="80"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="102" TopLine="71"/>
+        <Caret Line="111" TopLine="80"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="115" TopLine="97"/>
+        <Caret Line="93" TopLine="80"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="117" TopLine="97"/>
+        <Caret Line="95" TopLine="80"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="157" Column="14" TopLine="149"/>
+        <Caret Line="97" TopLine="80"/>
       </Position>
       <Position>
         <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="161" TopLine="149"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="190" TopLine="172"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="159" TopLine="140"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="161" TopLine="140"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="164" TopLine="140"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="165" TopLine="140"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="167" TopLine="140"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="168" TopLine="140"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="170" TopLine="140"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="172" TopLine="141"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="197" TopLine="179"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="186" Column="15" TopLine="158"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="101" Column="21" TopLine="79"/>
-      </Position>
-      <Position>
-        <Filename Value="calculadoraunit.pas"/>
-        <Caret Line="118" Column="30" TopLine="95"/>
+        <Caret Line="98" Column="9" TopLine="80"/>
       </Position>
     </JumpHistory>
     <RunParams>

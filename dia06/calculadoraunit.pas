@@ -5,13 +5,14 @@ unit calculadoraUnit;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
+    BitBtn1: TBitBtn;
     Button1: TButton;
     Button10: TButton;
     Button0: TButton;
@@ -31,6 +32,7 @@ type
     Button8: TButton;
     Button9: TButton;
     output: TEdit;
+    procedure BitBtn1Click(Sender: TObject);
     procedure Button0Click(Sender: TObject);
     procedure ButtonCEClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
@@ -44,9 +46,11 @@ type
     procedure Button9Click(Sender: TObject);
     procedure ButtonDivideClick(Sender: TObject);
     procedure ButtonEqualClick(Sender: TObject);
+    procedure ButtonEraseClick(Sender: TObject);
     procedure ButtonMinusClick(Sender: TObject);
     procedure ButtonMultClick(Sender: TObject);
     procedure ButtonPlusClick(Sender: TObject);
+    procedure ButtonVirgulaClick(Sender: TObject);
     procedure outputChange(Sender: TObject);
   private
 
@@ -74,8 +78,56 @@ begin
   end;
 
 end;
+procedure TForm1.ButtonEqualClick(Sender: TObject);
+var
+  i: Integer;
+  op: String;
+  aux: String;
+  operando1, operando2: Double;
+  expressao: String;
+begin
+  acc := 0;
+  op := '';
+  aux := '';
+  expressao:= output.Text;
+  for i := 1 to Length(expressao) do
+  begin
+    if (expressao[i] = '+') or (expressao[i] = '-') or (expressao[i] = '*') or (expressao[i] = '/') then
+    begin
+      operando1 := StrToFloat(aux);
+      aux := '';
+      op := expressao[i];
+      if op = '+' then
+        acc := acc + operando1
+      else if op = '-' then
+        acc := acc - operando1
+      else if op = '*' then
+        acc := acc * (operando1)
+      else if op = '/' then
+        acc := acc / operando1;
+    end
+    else
+    begin
+      aux := aux + expressao[i];
+    end;
+  end;
+
+  operando2 := StrToFloat(aux);
+  if op = '+' then
+    acc := acc + operando2
+  else if op = '-' then
+    acc := acc - operando2
+  else if op = '*' then
+    acc := acc * operando2
+  else if op = '/' then
+    acc := acc / operando2;
+
+  output.Text:=FloatToStr(acc);
 
 
+end;
+
+{
 procedure TForm1.ButtonEqualClick(Sender: TObject);
 var
   i:Integer;
@@ -118,6 +170,12 @@ begin
   output.Text:=FloatToStr(acc);
 
 end;
+}
+procedure TForm1.ButtonEraseClick(Sender: TObject);
+begin
+  output.Text:=Copy(output.Text,1,(Length(output.Text)-1));
+
+end;
 
 procedure TForm1.ButtonMinusClick(Sender: TObject);
 begin
@@ -146,6 +204,12 @@ begin
    output.Text:=output.Text+'+';
    setOp:=False;
   end;
+
+end;
+
+procedure TForm1.ButtonVirgulaClick(Sender: TObject);
+begin
+  output.Text:=output.Text+',';
 
 end;
 
@@ -218,13 +282,21 @@ begin
 
 end;
 
+procedure TForm1.BitBtn1Click(Sender: TObject);
+begin
+  output.Text:=Copy(output.Text,1,(Length(output.Text)-1));
+
+end;
+
 procedure TForm1.ButtonCEClick(Sender: TObject);
 begin
   output.Text:='';
+  acc:=0;
 end;
 
 procedure TForm1.outputChange(Sender: TObject);
 begin
+
 
 end;
 

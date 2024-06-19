@@ -1,21 +1,21 @@
 object Form1: TForm1
-  Left = 937
-  Height = 391
-  Top = 203
-  Width = 320
+  Left = 910
+  Height = 366
+  Top = 246
+  Width = 323
   Caption = 'Calculadora'
-  ClientHeight = 391
-  ClientWidth = 320
+  ClientHeight = 366
+  ClientWidth = 323
   Color = clGrayText
-  LCLVersion = '2.2.2.0'
+  LCLVersion = '3.4.0.0'
   object Button1: TButton
     Left = 8
     Height = 60
     Top = 224
     Width = 56
     Caption = '1'
-    OnClick = Button1Click
     TabOrder = 0
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 80
@@ -23,8 +23,8 @@ object Form1: TForm1
     Top = 224
     Width = 56
     Caption = '2'
-    OnClick = Button2Click
     TabOrder = 1
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 152
@@ -32,8 +32,8 @@ object Form1: TForm1
     Top = 224
     Width = 56
     Caption = '3'
-    OnClick = Button3Click
     TabOrder = 2
+    OnClick = Button3Click
   end
   object Button4: TButton
     Left = 8
@@ -41,8 +41,8 @@ object Form1: TForm1
     Top = 152
     Width = 56
     Caption = '4'
-    OnClick = Button4Click
     TabOrder = 3
+    OnClick = Button4Click
   end
   object Button5: TButton
     Left = 80
@@ -50,8 +50,8 @@ object Form1: TForm1
     Top = 152
     Width = 56
     Caption = '5'
-    OnClick = Button5Click
     TabOrder = 4
+    OnClick = Button5Click
   end
   object Button6: TButton
     Left = 152
@@ -59,40 +59,40 @@ object Form1: TForm1
     Top = 152
     Width = 56
     Caption = '6'
-    OnClick = Button6Click
     TabOrder = 5
+    OnClick = Button6Click
   end
   object Button7: TButton
     Left = 8
     Height = 60
-    Top = 72
+    Top = 80
     Width = 56
     Caption = '7'
-    OnClick = Button7Click
     TabOrder = 6
+    OnClick = Button7Click
   end
   object Button8: TButton
     Left = 80
     Height = 60
-    Top = 72
+    Top = 80
     Width = 56
     Caption = '8'
-    OnClick = Button8Click
     TabOrder = 7
+    OnClick = Button8Click
   end
   object Button9: TButton
     Left = 152
     Height = 60
-    Top = 72
+    Top = 80
     Width = 56
     Caption = '9'
-    OnClick = Button9Click
     TabOrder = 8
+    OnClick = Button9Click
   end
   object Button10: TButton
     Left = 8
     Height = 60
-    Top = 304
+    Top = 296
     Width = 56
     Caption = '+/-'
     TabOrder = 9
@@ -100,19 +100,20 @@ object Form1: TForm1
   object Button0: TButton
     Left = 80
     Height = 60
-    Top = 304
+    Top = 296
     Width = 56
     Caption = '0'
-    OnClick = Button0Click
     TabOrder = 10
+    OnClick = Button0Click
   end
   object ButtonVirgula: TButton
     Left = 152
     Height = 60
-    Top = 304
+    Top = 296
     Width = 56
     Caption = ','
     TabOrder = 11
+    OnClick = ButtonVirgulaClick
   end
   object ButtonDivide: TButton
     Left = 232
@@ -120,8 +121,8 @@ object Form1: TForm1
     Top = 136
     Width = 88
     Caption = '/'
-    OnClick = ButtonDivideClick
     TabOrder = 12
+    OnClick = ButtonDivideClick
   end
   object ButtonMult: TButton
     Left = 232
@@ -129,8 +130,8 @@ object Form1: TForm1
     Top = 176
     Width = 88
     Caption = 'X'
-    OnClick = ButtonMultClick
     TabOrder = 13
+    OnClick = ButtonMultClick
   end
   object ButtonPlus: TButton
     Left = 232
@@ -138,8 +139,8 @@ object Form1: TForm1
     Top = 216
     Width = 88
     Caption = '+'
-    OnClick = ButtonPlusClick
     TabOrder = 14
+    OnClick = ButtonPlusClick
   end
   object ButtonMinus: TButton
     Left = 232
@@ -147,8 +148,8 @@ object Form1: TForm1
     Top = 256
     Width = 88
     Caption = '-'
-    OnClick = ButtonMinusClick
     TabOrder = 15
+    OnClick = ButtonMinusClick
   end
   object ButtonEqual: TButton
     Left = 232
@@ -156,25 +157,43 @@ object Form1: TForm1
     Top = 312
     Width = 88
     Caption = '='
-    OnClick = ButtonEqualClick
     TabOrder = 16
+    OnClick = ButtonEqualClick
   end
   object output: TEdit
     Left = 8
-    Height = 35
+    Height = 23
     Top = 16
-    Width = 296
-    OnChange = outputChange
+    Width = 299
     ReadOnly = True
     TabOrder = 17
+    OnChange = outputChange
   end
   object ButtonCE: TButton
-    Left = 232
+    Left = 8
     Height = 25
-    Top = 64
+    Top = 48
     Width = 75
     Caption = 'CE'
-    OnClick = ButtonCEClick
     TabOrder = 18
+    OnClick = ButtonCEClick
+  end
+  object BitBtn1: TBitBtn
+    Left = 96
+    Height = 24
+    Top = 48
+    Width = 75
+    Glyph.Data = {
+      DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+      0400000000006800000000000000000000001000000010000000000000000000
+      BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+      7000777777077777700077777007777770007777060777777000777066000007
+      7000770666666607700070666666660770007706666666077000777066000007
+      7000777706077777700077777007777770007777770777777000777777777777
+      7000
+    }
+    OnClick = BitBtn1Click
+    TabOrder = 19
   end
 end
