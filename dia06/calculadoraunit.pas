@@ -15,6 +15,7 @@ type
     Button1: TButton;
     Button10: TButton;
     Button0: TButton;
+    ButtonCE: TButton;
     ButtonDivide: TButton;
     ButtonMult: TButton;
     ButtonPlus: TButton;
@@ -31,6 +32,7 @@ type
     Button9: TButton;
     output: TEdit;
     procedure Button0Click(Sender: TObject);
+    procedure ButtonCEClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -50,6 +52,7 @@ type
 
   public
     acc: Double;
+    setOp: Boolean;
 
   end;
 
@@ -64,93 +67,160 @@ implementation
 
 procedure TForm1.ButtonDivideClick(Sender: TObject);
 begin
-  output.Text:=output.Text+'/';
+  if setOp = True then
+  begin
+   output.Text:=output.Text+'/';
+   setOp:=False;
+  end;
 
 end;
+
 
 procedure TForm1.ButtonEqualClick(Sender: TObject);
 var
   i:Integer;
+  aux: String;
+  op: String;
+  n1: String;
+  n2: String;
+  p1: Double;
+  p2: Double;
+
 begin
-  for
+  aux:=output.Text;
+  op:='';
+  n1:='';
+  n2:='';
+  for i := 1 to aux.Length do
+  begin
+    if aux[i] in ['+', '-', '*', '/'] then
+    begin
+      op := aux[i];
+    end
+    else if op = '' then
+    begin
+      n1 := n1 + aux[i];
+    end
+    else
+    begin
+      n2 := n2 + aux[i];
+    end;
+  end;
+  p1:=StrToFloat(n1);
+  p2:=StrToFloat(n2);
+  case op of
+    '+': acc := p1 + p2;
+    '-': acc := p1 - p2;
+    '*': acc := p1 * p2;
+    '/': acc := p1 / p2;
+
+  end;
+  output.Text:=FloatToStr(acc);
 
 end;
 
 procedure TForm1.ButtonMinusClick(Sender: TObject);
 begin
-  output.Text:=output.Text+'-';
+  if setOp = True then
+  begin
+   output.Text:=output.Text+'-';
+   setOp:=False;
+  end;
 
 end;
 
 procedure TForm1.ButtonMultClick(Sender: TObject);
 begin
-  output.Text:=output.Text+'*';
+  if setOp = True then
+  begin
+   output.Text:=output.Text+'*';
+   setOp:=False;
+  end;
 
 end;
 
 procedure TForm1.ButtonPlusClick(Sender: TObject);
 begin
-  output.Text:=output.Text+'+';
+  if setOp = True then
+  begin
+   output.Text:=output.Text+'+';
+   setOp:=False;
+  end;
 
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'1';
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'2';
 
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'3';
 
 end;
 
 procedure TForm1.Button4Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'4';
 
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'5';
 
 end;
 
 procedure TForm1.Button6Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'6';
 
 end;
 
 procedure TForm1.Button7Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'7';
 
 end;
 
 procedure TForm1.Button8Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'8';
 
 end;
 
 procedure TForm1.Button9Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'9';
 
 end;
 
 procedure TForm1.Button0Click(Sender: TObject);
 begin
+  setOp:=True;
   output.Text:=output.Text+'0';
 
+end;
+
+procedure TForm1.ButtonCEClick(Sender: TObject);
+begin
+  output.Text:='';
 end;
 
 procedure TForm1.outputChange(Sender: TObject);
