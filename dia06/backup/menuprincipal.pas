@@ -116,7 +116,6 @@ var
 begin
   formVendedor:=CadVendedores.TCadVendedoresF.Create(Self);
   formVendedor.ShowModal;
-
 end;
 
 end.

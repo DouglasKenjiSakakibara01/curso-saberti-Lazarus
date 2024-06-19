@@ -1,0 +1,18 @@
+object OpSobreF: TOpSobreF
+  Left = 614
+  Height = 240
+  Top = 217
+  Width = 433
+  Caption = 'Sobre'
+  ClientHeight = 240
+  ClientWidth = 433
+  LCLVersion = '2.2.2.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 76
+    Top = 0
+    Width = 389
+    Caption = 'Sobre o sistema : Protótipo de sistema de menu com opções'#13#10'Linguagem : Object Pascal  - Lazarus'#13#10'Ano : 2024'#13#10'Empresa : SaberTI'
+    ParentColor = False
+  end
+end

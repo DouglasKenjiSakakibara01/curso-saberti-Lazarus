@@ -5,10 +5,14 @@ unit OpSobre;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
 
 type
+
+  { TOpSobreF }
+
   TOpSobreF = class(TForm)
+    Label1: TLabel;
   private
 
   public
