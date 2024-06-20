@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625800766"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -l -vewnhibq -Fi/home/dks01/curso-saberti-Lazarus/dia06/lib/i386-linux -Fu/usr/share/lazarus/3.2.0/lcl/units/i386-linux/gtk2 -Fu/usr/share/lazarus/3.2.0/lcl/units/i386-linux -Fu/usr/share/lazarus/3.2.0/components/freetype/lib/i386-linux -Fu/usr/share/lazarus/3.2.0/components/lazutils/lib/i386-linux -Fu/usr/share/lazarus/3.2.0/packager/units/i386-linux -Fu/home/dks01/curso-saberti-Lazarus/dia06/ -FU/home/dks01/curso-saberti-Lazarus/dia06/lib/i386-linux/ -FE/home/dks01/curso-saberti-Lazarus/dia06/ -o/home/dks01/curso-saberti-Lazarus/dia06/calculadora -dLCL -dLCLgtk2 calculadora.lpr"/>
+</CONFIG>

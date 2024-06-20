@@ -1,0 +1,113 @@
+inherited CadFornecedorF: TCadFornecedorF
+  Height = 327
+  Width = 897
+  ActiveControl = Panel1
+  ClientHeight = 327
+  ClientWidth = 897
+  OnCreate = FormCreate
+  object Edit1: TEdit[1]
+    Left = 160
+    Height = 35
+    Top = 104
+    Width = 72
+    TabOrder = 3
+  end
+  object Edit2: TEdit[2]
+    Left = 336
+    Height = 35
+    Top = 104
+    Width = 160
+    TabOrder = 5
+  end
+  object Edit3: TEdit[3]
+    Left = 152
+    Height = 35
+    Top = 152
+    Width = 344
+    TabOrder = 7
+  end
+  object Edit4: TEdit[4]
+    Left = 152
+    Height = 35
+    Top = 200
+    Width = 344
+    TabOrder = 1
+  end
+  object Edit5: TEdit[5]
+    Left = 576
+    Height = 35
+    Top = 200
+    Width = 240
+    TabOrder = 2
+  end
+  object Edit6: TEdit[6]
+    Left = 600
+    Height = 35
+    Top = 152
+    Width = 168
+    TabOrder = 4
+  end
+  object Label1: TLabel[7]
+    Left = 48
+    Height = 19
+    Top = 112
+    Width = 104
+    Caption = 'ID Fornecedor : '
+    ParentColor = False
+  end
+  object Label2: TLabel[8]
+    Left = 248
+    Height = 19
+    Top = 112
+    Width = 79
+    Caption = 'CPF/CNPJ : '
+    ParentColor = False
+  end
+  object Label3: TLabel[9]
+    Left = 48
+    Height = 19
+    Top = 160
+    Width = 110
+    Caption = 'Nome Fantasia : '
+    ParentColor = False
+  end
+  object Label4: TLabel[10]
+    Left = 48
+    Height = 19
+    Top = 208
+    Width = 93
+    Caption = 'Razão Social : '
+    ParentColor = False
+  end
+  object Label5: TLabel[11]
+    Left = 520
+    Height = 19
+    Top = 160
+    Width = 68
+    Caption = 'Telefone : '
+    ParentColor = False
+  end
+  object Label6: TLabel[12]
+    Left = 520
+    Height = 19
+    Top = 208
+    Width = 48
+    Caption = 'Email : '
+    ParentColor = False
+  end
+  object Edit8: TEdit[13]
+    Left = 120
+    Height = 35
+    Top = 248
+    Width = 240
+    TabOrder = 6
+  end
+  object Label8: TLabel[14]
+    Left = 48
+    Height = 19
+    Top = 256
+    Width = 72
+    Caption = 'Endereço : '
+    ParentColor = False
+  end
+end
