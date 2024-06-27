@@ -59,18 +59,19 @@
         <UnitName Value="cadPai"/>
       </Unit>
       <Unit>
+        <Filename Value="datamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataModule1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
         <Filename Value="cadusuarios.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="cadUsuariosF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="cadUsuarios"/>
-      </Unit>
-      <Unit>
-        <Filename Value="datamodule.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="DataModule1"/>
-        <ResourceBaseClass Value="DataModule"/>
       </Unit>
     </Units>
   </ProjectOptions>

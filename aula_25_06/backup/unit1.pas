@@ -13,12 +13,12 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-    btnCancelar: TButton;
     btnSair: TButton;
     btnNovo: TButton;
     btnEditar: TButton;
     btnGravar: TButton;
     btnExcluir: TButton;
+    btnCancelar: TButton;
     DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
     DBEdit4: TDBEdit;
@@ -34,6 +34,7 @@ type
     StaticText2: TStaticText;
     StaticText3: TStaticText;
     StaticText4: TStaticText;
+    procedure btnCancelarClick(Sender: TObject);
     procedure btnEditarClick(Sender: TObject);
     procedure btnExcluirClick(Sender: TObject);
     procedure btnGravarClick(Sender: TObject);
@@ -93,6 +94,11 @@ procedure TForm1.btnEditarClick(Sender: TObject);
 begin
   queryCliente.Edit;
 
+end;
+
+procedure TForm1.btnCancelarClick(Sender: TObject);
+begin
+  queryCliente.Cancel;
 end;
 
 procedure TForm1.btnExcluirClick(Sender: TObject);

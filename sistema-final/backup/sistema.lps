@@ -9,10 +9,8 @@
         <Filename Value="sistema.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <CursorPos X="3" Y="21"/>
+        <UsageCount Value="24"/>
       </Unit>
       <Unit>
         <Filename Value="menu.pas"/>
@@ -20,9 +18,11 @@
         <ComponentName Value="menuF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="19"/>
-        <CursorPos X="51" Y="46"/>
-        <UsageCount Value="20"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="7" Y="51"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -33,23 +33,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="cadPai"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="20"/>
-      </Unit>
-      <Unit>
-        <Filename Value="cadusuarios.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="cadUsuariosF"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="cadUsuarios"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="33"/>
-        <CursorPos X="20" Y="53"/>
-        <UsageCount Value="20"/>
+        <CursorPos X="15" Y="13"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="datamodule.pas"/>
@@ -57,9 +43,20 @@
         <ComponentName Value="DataModule1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="3"/>
+        <CursorPos Y="34"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadusuarios.pas"/>
+        <ComponentName Value="cadUsuariosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="cadUsuarios"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <CursorPos X="3" Y="34"/>
         <UsageCount Value="20"/>
       </Unit>
       <Unit>
@@ -68,31 +65,52 @@
         <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
       </Unit>
+      <Unit>
+        <Filename Value="cadusuarios.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup\cadpai.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup\cadpai.pas"/>
+        <ComponentName Value="cadPaiF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="cadPai"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadusuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="cadUsuariosF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="cadUsuarios"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="5">
+    <JumpHistory HistoryIndex="2">
+      <Position>
+        <Filename Value="cadusuarios.pas"/>
+      </Position>
       <Position>
         <Filename Value="menu.pas"/>
-        <Caret Line="8" Column="76"/>
+        <Caret Line="49" TopLine="12"/>
       </Position>
       <Position>
         <Filename Value="menu.pas"/>
-        <Caret Line="49" Column="22" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="cadusuarios.pas"/>
-        <Caret Line="59" Column="31" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="cadusuarios.pas"/>
-        <Caret Line="61" Column="17" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="cadusuarios.pas"/>
-        <Caret Line="54" Column="32" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="cadusuarios.pas"/>
-        <Caret Line="56" Column="8" TopLine="33"/>
+        <Caret Line="45" Column="42" TopLine="17"/>
       </Position>
     </JumpHistory>
     <RunParams>

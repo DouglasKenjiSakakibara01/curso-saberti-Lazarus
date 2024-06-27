@@ -5,7 +5,7 @@ unit menu;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, cadUsuarios;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus,cadUsuarios;
 
 type
 
@@ -38,16 +38,19 @@ implementation
 
 { TmenuF }
 
+
+
 procedure TmenuF.itemUsuariosClick(Sender: TObject);
 var
   formUsuarios: cadUsuarios.TcadUsuariosF;
 begin
   try
-    formUsuarios:=cadUsuarios.TcadUsuariosF.Create(Self);
-    formUsuarios.ShowModal;
+      formUsuarios:=cadUsuarios.TcadUsuariosF.Create(Self);
+      formUsuarios.ShowModal;
   finally
-    formUsuarios.Free;
+      formUsuarios.Free;
   end;
+
 
 
 end;

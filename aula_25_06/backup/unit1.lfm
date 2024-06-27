@@ -167,7 +167,7 @@ object Form1: TForm1
     Width = 75
     Caption = 'CANCELAR'
     TabOrder = 14
-    OnClick = btnExcluirClick
+    OnClick = btnCancelarClick
   end
   object dsCliente: TDataSource
     DataSet = queryCliente

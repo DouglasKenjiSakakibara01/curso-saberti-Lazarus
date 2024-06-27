@@ -5,16 +5,28 @@ unit cadPai;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, Menus,
+  ActnList, StdCtrls, ComCtrls, ExtCtrls, DBGrids;
 
 type
 
-  { TForm1 }
+  { TcadPaiF }
 
-  TForm1 = class(TForm)
-    BitBtn1: TBitBtn;
-    BitBtn2: TBitBtn;
-    BitBtn3: TBitBtn;
+  TcadPaiF = class(TForm)
+    btnExcluir: TBitBtn;
+    btnGravar: TBitBtn;
+    btnBuscar: TBitBtn;
+    btnNovo: TBitBtn;
+    btnSair: TBitBtn;
+    DBGrid1: TDBGrid;
+    editBusca: TEdit;
+    Label1: TLabel;
+    PageControl1: TPageControl;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Pesquisa: TTabSheet;
+    Cadastro: TTabSheet;
   private
 
   public
@@ -22,11 +34,16 @@ type
   end;
 
 var
-  Form1: TForm1;
+  cadPaiF: TcadPaiF;
 
 implementation
 
 {$R *.lfm}
+
+{ TcadPaiF }
+
+
+
 
 end.
 
