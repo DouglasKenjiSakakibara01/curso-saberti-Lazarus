@@ -1,0 +1,118 @@
+inherited cadUsuariosF: TcadUsuariosF
+  Left = 837
+  Top = 202
+  Width = 744
+  Caption = 'Usuários'
+  ClientWidth = 744
+  inherited BitBtn2: TBitBtn
+    Left = 240
+  end
+  object DBGrid1: TDBGrid[3]
+    Left = 8
+    Height = 100
+    Top = 72
+    Width = 525
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'id'
+        Width = 40
+        FieldName = 'id'
+      end    
+      item
+        Title.Caption = 'usuario'
+        Width = 150
+        FieldName = 'usuario'
+      end    
+      item
+        Title.Caption = 'nome_completo'
+        Width = 150
+        FieldName = 'nome_completo'
+      end    
+      item
+        Title.Caption = 'senha'
+        Width = 150
+        FieldName = 'senha'
+      end>
+    DataSource = dsUsuarios
+    TabOrder = 3
+  end
+  object inputCod: TEdit[4]
+    Left = 104
+    Height = 23
+    Top = 16
+    Width = 72
+    TabOrder = 4
+  end
+  object btnBuscar: TBitBtn[5]
+    Left = 224
+    Height = 30
+    Top = 9
+    Width = 75
+    Caption = 'Buscar'
+    OnClick = btnBuscarClick
+    TabOrder = 5
+  end
+  object StaticText1: TStaticText[6]
+    Left = 48
+    Height = 17
+    Top = 19
+    Width = 51
+    Caption = 'Código : '
+    TabOrder = 6
+  end
+  object queryUsuarios: TZQuery[7]
+    Connection = DataModule1.ZConnection1
+    SQL.Strings = (
+      ''
+    )
+    Params = <>
+    Left = 616
+    Top = 16
+    object queryUsuariosid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object queryUsuariosusuario: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'usuario'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object queryUsuariosnome_completo: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nome_completo'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object queryUsuariossenha: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'senha'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object dsUsuarios: TDataSource[8]
+    DataSet = queryUsuarios
+    OnDataChange = dsUsuariosDataChange
+    Left = 680
+    Top = 16
+  end
+end

@@ -1,0 +1,225 @@
+object Form1: TForm1
+  Left = 768
+  Height = 478
+  Top = 276
+  Width = 697
+  Caption = 'Form1'
+  ClientHeight = 478
+  ClientWidth = 697
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '3.4.0.0'
+  object DBGrid1: TDBGrid
+    Left = 24
+    Height = 100
+    Top = 80
+    Width = 496
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'clienteid'
+        Width = 60
+        FieldName = 'clienteid'
+      end    
+      item
+        Title.Caption = 'cpf_cnpj_cliente'
+        Width = 130
+        FieldName = 'cpf_cnpj_cliente'
+      end    
+      item
+        Title.Caption = 'nome_cliente'
+        Width = 200
+        FieldName = 'nome_cliente'
+      end    
+      item
+        Title.Caption = 'tipo_cliente'
+        Width = 70
+        FieldName = 'tipo_cliente'
+      end>
+    DataSource = dsCliente
+    TabOrder = 0
+  end
+  object btnNovo: TButton
+    Left = 24
+    Height = 25
+    Top = 392
+    Width = 75
+    Caption = 'NOVO'
+    TabOrder = 1
+    OnClick = btnNovoClick
+  end
+  object btnEditar: TButton
+    Left = 120
+    Height = 25
+    Top = 392
+    Width = 75
+    Caption = 'EDITAR'
+    TabOrder = 2
+    OnClick = btnEditarClick
+  end
+  object btnGravar: TButton
+    Left = 216
+    Height = 25
+    Top = 392
+    Width = 75
+    Caption = 'GRAVAR'
+    TabOrder = 3
+    OnClick = btnGravarClick
+  end
+  object btnExcluir: TButton
+    Left = 312
+    Height = 25
+    Top = 392
+    Width = 75
+    Caption = 'EXCLUIR'
+    TabOrder = 4
+    OnClick = btnExcluirClick
+  end
+  object btnSair: TButton
+    Left = 568
+    Height = 25
+    Top = 392
+    Width = 75
+    Caption = 'SAIR'
+    TabOrder = 5
+    OnClick = btnSairClick
+  end
+  object DBEdit2: TDBEdit
+    Left = 123
+    Height = 23
+    Top = 240
+    Width = 80
+    DataField = 'cpf_cnpj_cliente'
+    DataSource = dsCliente
+    MaxLength = 0
+    TabOrder = 6
+  end
+  object DBEdit3: TDBEdit
+    Left = 123
+    Height = 23
+    Top = 288
+    Width = 80
+    DataField = 'nome_cliente'
+    DataSource = dsCliente
+    MaxLength = 0
+    TabOrder = 7
+  end
+  object DBEdit4: TDBEdit
+    Left = 123
+    Height = 23
+    Top = 336
+    Width = 80
+    DataField = 'tipo_cliente'
+    DataSource = dsCliente
+    MaxLength = 0
+    TabOrder = 8
+  end
+  object StaticText1: TStaticText
+    Left = 37
+    Height = 17
+    Top = 210
+    Width = 65
+    Caption = 'ID Cliente : '
+    TabOrder = 9
+    OnClick = StaticText1Click
+  end
+  object StaticText2: TStaticText
+    Left = 37
+    Height = 17
+    Top = 246
+    Width = 65
+    Caption = 'CPF/CNPJ : '
+    TabOrder = 10
+    OnClick = StaticText1Click
+  end
+  object StaticText3: TStaticText
+    Left = 37
+    Height = 17
+    Top = 288
+    Width = 65
+    Caption = 'Nome : '
+    TabOrder = 11
+    OnClick = StaticText1Click
+  end
+  object DBEdit5: TDBEdit
+    Left = 123
+    Height = 23
+    Top = 204
+    Width = 80
+    DataField = 'clienteid'
+    DataSource = dsCliente
+    MaxLength = 0
+    TabOrder = 12
+  end
+  object StaticText4: TStaticText
+    Left = 37
+    Height = 17
+    Top = 342
+    Width = 70
+    Caption = 'Tipo Cliente : '
+    TabOrder = 13
+    OnClick = StaticText1Click
+  end
+  object btnCancelar: TButton
+    Left = 408
+    Height = 25
+    Top = 392
+    Width = 75
+    Caption = 'CANCELAR'
+    TabOrder = 14
+    OnClick = btnExcluirClick
+  end
+  object dsCliente: TDataSource
+    DataSet = queryCliente
+    Left = 560
+    Top = 16
+  end
+  object queryCliente: TZQuery
+    Connection = DataModule1.ZConnection1
+    SQL.Strings = (
+      'select * from cliente;'
+    )
+    Params = <>
+    Left = 624
+    Top = 16
+    object queryClienteclienteid: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'clienteid'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object queryClientecpf_cnpj_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'cpf_cnpj_cliente'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 18
+    end
+    object queryClientenome_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'nome_cliente'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
+    object queryClientetipo_cliente: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tipo_cliente'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+  end
+end
